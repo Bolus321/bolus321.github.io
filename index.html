@@ -23,10 +23,11 @@
             justify-content: center;
             align-items: center;
             padding: 40px;
+            position: relative;
         }
         .content {
             max-width: 500px;
-            margin-right: 40px;
+            z-index: 2;
         }
         h1, h2, h3 {
             color: #333;
@@ -56,10 +57,15 @@
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
+            z-index: 2;
         }
         img {
-            max-width: 400px;
-            border-radius: 10px;
+            max-width: 600px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            opacity: 0.2; /* Adjust transparency here */
+            z-index: 1;
         }
         footer {
             background-color: #333;
@@ -91,9 +97,9 @@
                 </ul>
             </div>
 
-            <p><a href="https://wnd.com" class="cta-button">Visit the Dashboard</a></p>
+            <p><a href="https://www.salesdashboard.pythonandvba.com" class="cta-button">Visit the Dashboard</a></p>
         </div>
-        <img src="https://via.placeholder.com/400" alt="Dashboard Preview Image">
+        <img src="https://ibb.co/6sjM3PS/600" alt="Dashboard Preview Image">
     </section>
 
     <footer>
