@@ -11,7 +11,6 @@
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
         }
         header {
             background-color: #0083B8;
@@ -20,18 +19,10 @@
             text-align: center;
         }
         section {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
             padding: 40px;
-            position: relative;
-            height: 100vh;
+            text-align: center;
         }
-        .content {
-            width: 33%;
-            z-index: 2;
-        }
-        h1, h2, h3 {
+        h1 {
             color: #333;
         }
         p {
@@ -41,7 +32,8 @@
         }
         .benefits {
             text-align: left;
-            margin-bottom: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         .benefits ul {
             list-style-type: none;
@@ -59,24 +51,13 @@
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
-            z-index: 2;
-        }
-        img {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 55%;
-            height: 85%;
-            object-fit: cover;
-            z-index: 1;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: relative;
-            z-index: 3;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -86,24 +67,22 @@
     </header>
 
     <section>
-        <div class="content">
-            <h2>Your Tool for Real-Time Data-Driven Decisions</h2>
-            <p>The GCL Holdings Sales Dashboard empowers teams to analyze sales data interactively, making it the perfect tool for meetings and decision-making.</p>
+        <h2>Your Tool for Real-Time Data-Driven Decisions</h2>
+        <p>The GCL Holdings Sales Dashboard empowers teams to analyze sales data interactively, making it the perfect tool for meetings and decision-making.</p>
 
-            <div class="benefits">
-                <h3>Benefits of Having a Sales Dashboard:</h3>
-                <ul>
-                    <li>Visualizes real-time sales data for quick analysis</li>
-                    <li>Enhances decision-making with key performance metrics</li>
-                    <li>Promotes data-driven discussions in meetings</li>
-                    <li>Allows for easy filtering by city, customer type, and gender</li>
-                    <li>Interactive charts for deeper insights into performance</li>
-                </ul>
-            </div>
-
-            <p><a href="https://www.wnd.com" class="cta-button">Visit the Dashboard</a></p>
+        <div class="benefits">
+            <h3>Benefits of Having a Sales Dashboard:</h3>
+            <ul>
+                <li>Visualizes real-time sales data for quick analysis</li>
+                <li>Enhances decision-making with key performance metrics</li>
+                <li>Promotes data-driven discussions in meetings</li>
+                <li>Allows for easy filtering by city, customer type, and gender</li>
+                <li>Interactive charts for deeper insights into performance</li>
+            </ul>
         </div>
-        <img src="https://i.postimg.cc/QtZv82yb/Dashboard-2.png" alt="Dashboard Preview Image">
+
+        <p><a href="https://www.salesdashboard.pythonandvba.com" class="cta-button">Visit the Dashboard</a></p>
+		<img src="https://i.postimg.cc/QtZv82yb/Dashboard-2.png" alt="Dashboard Preview Image">
     </section>
 
     <footer>
