@@ -11,7 +11,6 @@
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
         }
         header {
             background-color: #0083B8;
@@ -21,15 +20,13 @@
         }
         section {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             padding: 40px;
-            position: relative;
-            height: 100vh;
         }
         .content {
-            width: 33%;
-            z-index: 2;
+            max-width: 500px;
+            margin-right: 40px;
         }
         h1, h2, h3 {
             color: #333;
@@ -59,24 +56,17 @@
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
-            z-index: 2;
         }
         img {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 40%;
-            height: 60%;
-            object-fit: cover;
-            z-index: 1;
+            max-width: 400px;
+            border-radius: 10px;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: relative;
-            z-index: 3;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -101,9 +91,9 @@
                 </ul>
             </div>
 
-            <p><a href="https://www.wnd.com" class="cta-button">Visit the Dashboard</a></p>
+            <p><a href="http://172.17.198.116:8502/" class="cta-button">Visit the Dashboard</a></p>
         </div>
-        <img src="https://i.postimg.cc/QtZv82yb/Dashboard-2.png" alt="Dashboard Preview Image">
+		<img src="https://i.postimg.cc/QtZv82yb/Dashboard-2.png" alt="Dashboard Preview Image">
     </section>
 
     <footer>
