@@ -11,6 +11,7 @@
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         header {
             background-color: #0083B8;
@@ -20,13 +21,14 @@
         }
         section {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             padding: 40px;
             position: relative;
+            height: 100vh;
         }
         .content {
-            max-width: 500px;
+            width: 33%;
             z-index: 2;
         }
         h1, h2, h3 {
@@ -60,11 +62,12 @@
             z-index: 2;
         }
         img {
-            max-width: 600px;
             position: absolute;
             right: 0;
             top: 0;
-            opacity: 0.2; /* Adjust transparency here */
+            width: 66%;
+            height: 100%;
+            object-fit: cover;
             z-index: 1;
         }
         footer {
@@ -72,7 +75,8 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            margin-top: 40px;
+            position: relative;
+            z-index: 3;
         }
     </style>
 </head>
@@ -97,7 +101,7 @@
                 </ul>
             </div>
 
-            <p><a href="https://wnd.com" class="cta-button">Visit the Dashboard</a></p>
+            <p><a href="https://www.wnd.com" class="cta-button">Visit the Dashboard</a></p>
         </div>
         <img src="https://ibb.co/6sjM3PS" alt="Dashboard Preview Image">
     </section>
